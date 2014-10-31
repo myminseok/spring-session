@@ -1,0 +1,11 @@
+---
+applications:
+- name: spring-session
+  memory: 512M
+  instances: 1
+  # host: spring-session-${random-word}
+  host: spring-session-mkim
+  path: target/spring-session.war
+  services:
+  - redis
+  
